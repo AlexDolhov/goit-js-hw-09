@@ -4,6 +4,8 @@ const refs = {
 };
 // console.log(refs.stopBtn);
 
+let colorChangeInterval = null;
+
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }

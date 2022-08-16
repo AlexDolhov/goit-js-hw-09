@@ -30,14 +30,14 @@ const onCreatePromises = e => {
 
   let firstDelay = Number(delay.value);
   const promisesAmount = Number(amount.value);
-  const delayStep = Number(delay.value);
+  const delayStep = Number(step.value);
 
   // let firstDelay = Number(e.currentTarget.delay.value);
   // const promisesAmount = Number(e.currentTarget.amount.value);
   // const delayStep = Number(e.currentTarget.delay.value);
 
   for (let i = 1; i <= promisesAmount; i += 1) {
-    createPromise(1, firstDelay);
+    createPromise(i, firstDelay);
     firstDelay += delayStep;
   }
 };

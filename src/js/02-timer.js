@@ -14,6 +14,8 @@ const refs = {
 refs.startBtn.disabled = true;
 // console.dir(refs.dateTimePIcker);
 
+let timer = 0;
+
 const options = {
   enableTime: true,
   time_24hr: true,
